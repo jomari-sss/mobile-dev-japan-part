@@ -121,29 +121,77 @@ _row('Filipino Cuisine', 'Tortang Talong',
     'assets/images/tortang_talong.jpg'),
 
 // --- European Cuisine ---
-_row('European Cuisine', 'Spaghetti Carbonara',
-    'Spaghetti, Egg, Pancetta, Parmesan, Black Pepper', 'assets/images/dish_photo.jpg'),
-_row('European Cuisine', 'Beef Bourguignon',
-    'Beef Chuck, Red Wine, Carrot, Pearl Onion, Mushroom', 'assets/images/dish_photo.jpg'),
-_row('European Cuisine', 'Margherita Pizza',
-    'Pizza Dough, Tomato Sauce, Mozzarella, Basil, Olive Oil', 'assets/images/dish_photo.jpg'),
-_row('European Cuisine', 'Paella',
-    'Rice, Saffron, Chicken, Shrimp, Bell Pepper', 'assets/images/dish_photo.jpg'),
-_row('European Cuisine', 'Beef Wellington',
-    'Beef Tenderloin, Puff Pastry, Mushroom Duxelles, Prosciutto, Dijon Mustard', 'assets/images/dish_photo.jpg'),
-_row('European Cuisine', 'Ratatouille',
-    'Eggplant, Zucchini, Bell Pepper, Tomato, Herbs de Provence', 'assets/images/dish_photo.jpg'),
-_row('European Cuisine', 'Fish and Chips',
-    'Cod Fillet, Beer Batter, Potato, Malt Vinegar, Tartar Sauce', 'assets/images/dish_photo.jpg'),
-_row('European Cuisine', 'Moussaka',
-    'Eggplant, Ground Lamb, Bechamel Sauce, Tomato, Cinnamon', 'assets/images/dish_photo.jpg'),
-_row('European Cuisine', 'Goulash',
-    'Beef, Paprika, Onion, Bell Pepper, Caraway Seed', 'assets/images/dish_photo.jpg'),
-_row('European Cuisine', 'Tiramisu',
-    'Ladyfingers, Mascarpone, Espresso, Cocoa Powder, Egg Yolk', 'assets/images/dish_photo.jpg'),
-    ];
+    _row(
+    'European Cuisine',
+    'Moussaka',
+    'Eggplant, Ground beef or lamb Potatoes, Tomatoes, Onion, Garlic, Béchamel sauce, Cheese',
+    'assets/images/moussaka.jpg',
+    ),
 
+    _row(
+    'European Cuisine',
+    'Beef Bourguignon',
+    'Beef Chuck, Red Wine, Carrot, Pearl Onion, Mushroom, Garlic, Herbs, Beef Stock',
+    'assets/images/beef_bourguignon.jpg',
+    ),
 
+    _row(
+    'European Cuisine',
+    'Pizza Margherita',
+    'Pizza Dough, Tomato Sauce, Mozzarella, Basil, Olive Oil, Salt',
+    'assets/images/margherita_pizza.jpg',
+    ),
+
+    _row(
+    'European Cuisine',
+    'Paella',
+    'Rice, Saffron, Chicken, Shrimp, Bell Pepper, Tomatoes, Squid, Olive Oil',
+    'assets/images/paella.jpg',
+    ),
+
+    _row(
+    'European Cuisine',
+    'Fish and Chips',
+    'White fish, Potatoes, Flour, Eggs, Cooking oil, Salt, Vinegar, Mustard',
+    'assets/images/fish_and_chips.jpg',
+    ),
+
+    _row(
+    'European Cuisine',
+    'Bratwurst',
+    'Pork or beef sausage, Onion, Garlic, Mustard, Sauerkraut, Salt, Black pepper',
+    'assets/images/bratwurst.jpg',
+    ),
+
+    _row(
+    'European Cuisine',
+    'Pierogi',
+    'Flour, Potatoes, Cheese, Onion, Butter, Salt, Black pepper',
+    'assets/images/pierogi.jpg',
+    ),
+
+    _row(
+    'European Cuisine',
+    'Bacalhau',
+    'Salted cod, Potatoes, Onion, Garlic, Eggs, Olive oil, Black olives',
+    'assets/images/bacalhau.jpg',
+    ),
+
+    _row(
+    'European Cuisine',
+    'Goulash',
+    'Beef, Onion, Paprika, Tomatoes, Potatoes, Carrots, Garlic, Beef broth',
+    'assets/images/goulash.jpg',
+    ),
+
+    _row(
+    'European Cuisine',
+    'Wiener Schnitzel',
+    'Veal or pork, Flour, Eggs, Breadcrumbs, Salt, Black pepper, Cooking oil, Lemon',
+    'assets/images/wiener_schnitzel.jpg',
+    ),
+
+];
     for (final row in seedRows) {
       await db.insert(table, row);
     }
